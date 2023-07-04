@@ -12,7 +12,7 @@ export default class News extends Component {
         }
     }
     async componentDidMount() {
-        let url = "https://dummyjson.com/products?limit=6";
+        let url = "https://dummyjson.com/products?limit=100";
         let data = await fetch(url);
         let parsedData = await data.json();
         this.setState({ products: parsedData.products })
@@ -27,7 +27,7 @@ export default class News extends Component {
   
     render() {
         const {listView} = this.state;
-        const buttonClassName = listView ? 'list' : 'grid'; 
+        const buttonClassName = listView ? 'grid' : 'list'; 
         return (
             <div>
                 <h1>News List</h1>
@@ -36,6 +36,7 @@ export default class News extends Component {
                     {this.state.products.map((element) => {
                         return <div key={element.id}>
                             <NewsItem
+                                image={element.thumbnail}
                                 title={element.title}
                                 description={element.description}
                                 category={element.category}

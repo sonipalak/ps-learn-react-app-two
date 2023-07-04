@@ -1,0 +1,36 @@
+@import 'colors.scss';
+@import 'fonts.scss';
+@import 'variables.scss';
+@import 'mixins.scss';
+
+.button{
+    padding: 15px 20px;
+    border-radius: 12px;
+    font-size: 16px;
+    line-height: 140%;
+    font-weight: $font-700;
+    font-family: $font-family-name;
+    border:0;
+    &:focus {
+        box-shadow: 0 0 0 4px $neutral-200;
+        outline: 0;
+    }
+    cursor: pointer;
+    &:disabled{
+        cursor: not-allowed;
+        opacity: 0.5;
+    }
+}
+
+.filled{
+    background-color: $neutral-600-anchor ;
+    color: white;
+
+    &:hover {
+        background-color: $neutral-700;
+    }
+
+    &:active {
+        background-color: $neutral-800;
+    }
+}

@@ -175,3 +175,30 @@
           }
        }
 }
+
+.view-icon{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+    text-transform: capitalize;
+    cursor: pointer;
+    border: $neutral-500 solid 1px;
+    border-radius: 6px;
+    width: max-content;
+    margin-bottom: 15px;
+    color: $neutral-500;
+    font-size: 16px;
+    font-weight: $font-700;
+    text-decoration: none;
+    &.grid-view{
+        .list-icon{
+            display: none;
+        }
+    }
+    &.list-view{
+        .grid-icon{
+            display: none;
+        }
+    }
+}

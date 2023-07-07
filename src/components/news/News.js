@@ -9,7 +9,7 @@ export default class News extends Component {
       <div>
         <Routes>
           <Route exact path="/" element={<NewLayout />}>
-          <Route exact path="/general" element={<NewsList key="general" pageSize={6} country="in" category="general" />} />
+          <Route exact path="/" element={<NewsList key="general" pageSize={6} country="in" category="general" />} />
           <Route exact path="/business" element={<NewsList key="business" pageSize={6} country="in" category="business" />} />
           <Route exact path="/entertainment" element={<NewsList key="entertainment" pageSize={6} country="in" category="entertainment" />} />
           <Route exact path="/science" element={<NewsList key="science" pageSize={6} country="in" category="science" />} />

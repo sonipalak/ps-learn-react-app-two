@@ -11,10 +11,9 @@ export default class ProductList extends Component {
     }
   }
   async componentDidMount(){
-    let url = "https://dummyjson.com/products?limit=2";
+    let url = `https://dummyjson.com/products?limit=8`;
     let data = await fetch(url);
     let parsedData = await data.json();
-    console.log(parsedData)
     this.setState({
       products: parsedData.products
     })

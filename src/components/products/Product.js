@@ -7,7 +7,7 @@ export default class Product extends Component {
     return (
       <div>
         <Routes>
-          <Route exact path="/" element={<ProductsLayout />} />
+          <Route exact path="/" element={<ProductsLayout limit={6} />} />
         </Routes>
       </div>
     )

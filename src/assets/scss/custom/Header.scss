@@ -19,6 +19,12 @@
                 color: $neutral-600-anchor;
                 font-weight: $font-700;
                 text-transform: capitalize;
+                &:hover{
+                    color: $negatives-600-anchor;
+                }
+                &.active{
+                    color: $negatives-600-anchor;
+                }
         }
     }
 }

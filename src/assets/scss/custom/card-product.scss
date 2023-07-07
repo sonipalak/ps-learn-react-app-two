@@ -22,14 +22,15 @@
 }
 
 .item-box {
-    border: $neutral-300 solid 1px;
+    // border: $neutral-300 solid 1px;
+    background-color: $gray-100;
     min-height: 100%;
-    border-radius: 6px;
+    border-radius: 12px;
     display: grid;
     gap: 10px;
     align-content: flex-start;
     &:hover {
-        border: $neutral-500 solid 1px;
+        // border: $neutral-500 solid 1px;
         box-shadow: $box-shadow;
     }
     .head {
@@ -47,7 +48,7 @@
         align-items: center;
         justify-content: center;
         background-color: #ffffff;
-        border-radius: 6px 6px 0 0;
+        border-radius: 12px 12px 0 0;
         height: 230px;
         img {
             object-fit: contain;
@@ -237,6 +238,12 @@
             color: $neutral-600-anchor;
             text-transform: capitalize;
             font-weight: $font-700;
+            &:hover{
+                color: $negatives-600-anchor;
+            }
+            &.active{
+                color: $negatives-600-anchor;
+            }
         }
     }
 }

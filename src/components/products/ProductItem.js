@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 
 export default class ProductItem extends Component {
   render() {
-    let {thumbnail, title, description, price, discountPercentage, brand, category, id} = this.props;
+    let {thumbnail, title, description, price, discountPercentage, brand, category} = this.props;
     return (
       <>
         <div className='item-box'>

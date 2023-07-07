@@ -14,7 +14,6 @@ export default class NewsItem extends Component {
           <p className='description'>
             {!description?"No Description Available...":description} <a rel="noreferrer" href={newsUrl} target='_blank'>Read More</a>
           </p>
-          
         </div>
       </div>
     )

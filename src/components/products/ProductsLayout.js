@@ -5,6 +5,7 @@ import ProductFilter from './ProductFilter';
 import ProductList from './ProductList';
 
 export default class ProductsLayout extends Component {
+  pageLimit="6"
   render() {
     return (
       <>
@@ -14,7 +15,7 @@ export default class ProductsLayout extends Component {
               <ProductFilter />
             </Col>
             <Col xs={12} md={9}>
-              <ProductList />
+              <ProductList pageLimit={this.pageLimit} />
             </Col>
           </Row>
         </section>

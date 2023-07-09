@@ -4,18 +4,20 @@ import { Routes, Route } from "react-router-dom";
 import NewLayout from './NewLayout'
 
 export default class News extends Component {
+  pageSize = 6
+  country = "us"
   render() {
     return (
       <div>
         <Routes>
           <Route exact path="/" element={<NewLayout />}>
-          <Route exact path="/" element={<NewsList key="general" pageSize={6} country="in" category="general" />} />
-          <Route exact path="/business" element={<NewsList key="business" pageSize={6} country="in" category="business" />} />
-          <Route exact path="/entertainment" element={<NewsList key="entertainment" pageSize={6} country="in" category="entertainment" />} />
-          <Route exact path="/science" element={<NewsList key="science" pageSize={6} country="in" category="science" />} />
-          <Route exact path="/health" element={<NewsList key="health" pageSize={6} country="in" category="health" />} />
-          <Route exact path="/sports" element={<NewsList key="sports" pageSize={6} country="in" category="sports" />} />
-          <Route exact path="/technology" element={<NewsList key="technology" pageSize={6} country="in" category="technology" />} />
+          <Route exact path="/" element={<NewsList key="general" pageSize={this.pageSize} country={this.country} category="general" />} />
+          <Route exact path="/business" element={<NewsList key="business" pageSize={this.pageSize} country={this.country} category="business" />} />
+          <Route exact path="/entertainment" element={<NewsList key="entertainment" pageSize={this.pageSize} country={this.country} category="entertainment" />} />
+          <Route exact path="/science" element={<NewsList key="science" pageSize={this.pageSize} country={this.country} category="science" />} />
+          <Route exact path="/health" element={<NewsList key="health" pageSize={this.pageSize} country={this.country} category="health" />} />
+          <Route exact path="/sports" element={<NewsList key="sports" pageSize={this.pageSize} country={this.country} category="sports" />} />
+          <Route exact path="/technology" element={<NewsList key="technology" pageSize={this.pageSize} country={this.country} category="technology" />} />
         </Route>
       </Routes>
       </div>

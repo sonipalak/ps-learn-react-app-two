@@ -11,9 +11,10 @@ export default class ProductList extends Component {
     }
   }
   async componentDidMount(){
-    let url = `https://dummyjson.com/products?limit=8`;
+    let url = `https://dummyjson.com/products?limit=${this.props.pageLimit}`;
     let data = await fetch(url);
     let parsedData = await data.json();
+    console.log(parsedData)
     this.setState({
       products: parsedData.products
     })

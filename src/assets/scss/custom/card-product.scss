@@ -257,3 +257,16 @@
 .infinite-scroll-component {
     overflow: hidden !important;
 }
+
+.item-loading{
+    position: relative;
+    height: 25px;
+    margin: 0 0 20px 0;
+    .loading{
+        background-color:transparent;
+        .inner{
+            position: relative;
+        }
+    } 
+
+}

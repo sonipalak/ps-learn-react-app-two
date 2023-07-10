@@ -7,10 +7,9 @@ import NoMatch from './components/NoMatch';
 import News from './components/news/News';
 import Product from "./components/products/Product";
 
-export default function App() {
+export default function App(props) {
   return (
     <div>
-
       <Routes>
           <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />

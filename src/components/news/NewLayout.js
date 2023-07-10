@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import { Outlet, NavLink } from 'react-router-dom'
 
 export default class NewLayout extends Component {
-  
   render() {
     return (
       <>

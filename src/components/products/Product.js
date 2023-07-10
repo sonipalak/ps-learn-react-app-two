@@ -1,15 +1,14 @@
-import React, { Component } from 'react'
+import React from 'react'
 import { Routes, Route } from "react-router-dom";
 import ProductsLayout from './ProductsLayout';
 
-export default class Product extends Component {
-  render() {
-    return (
-      <div>
-        <Routes>
-          <Route exact path="/" element={<ProductsLayout limit={6} />} />
-        </Routes>
-      </div>
-    )
-  }
+const Product =() => {
+  return (
+    <div>
+      <Routes>
+        <Route exact path="/" element={<ProductsLayout limit={6} />} />
+      </Routes>
+    </div>
+  )
 }
+export default Product

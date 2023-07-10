@@ -1,8 +1,7 @@
-import React, { Component } from 'react'
+import React from 'react'
 
-export default class ProductItem extends Component {
-  render() {
-    let {thumbnail, title, description, price, discountPercentage, brand, category} = this.props;
+const ProductItem = (props) => {
+    let {thumbnail, title, description, price, discountPercentage, brand, category} = props;
     return (
       <>
         <div className='item-box'>
@@ -22,5 +21,5 @@ export default class ProductItem extends Component {
         </div>
       </>
     )
-  }
 }
+export default ProductItem

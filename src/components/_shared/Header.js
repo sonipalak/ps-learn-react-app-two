@@ -6,7 +6,7 @@ import Navbar from 'react-bootstrap/Navbar'
 
 const Header = () => {
     return (
-        <Navbar expand="lg" className="header">
+        <Navbar expand="lg" className="header" sticky="top">
             <Container>
                 <Navbar.Brand href="#home">
                     <svg width="50px" height="50px" viewBox="0 0 1024 1024" fill="#000000" version="1.1" xmlns="http://www.w3.org/2000/svg">

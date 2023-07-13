@@ -1,10 +1,8 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState, useEffect } from "react";
 import ProductItem from './ProductItem';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-
-const ProductList = (props) => {
-
+const ProductList = () => {
   const [products, setProducts] = useState([])
 
   const getProduct = async () => {
@@ -17,12 +15,7 @@ const ProductList = (props) => {
     getProduct();
   }, [])
   return (
-    <>
-      <Row>
-        <Col>
-          <h1>Products</h1>
-        </Col>
-      </Row>
+    <div>
       <Row>
         {products.map((element) => {
           return <Col className='mb-4' xs={12} md={6} key={element.id}>
@@ -34,12 +27,13 @@ const ProductList = (props) => {
               discountPercentage={element.discountPercentage}
               brand={element.brand}
               category={element.category}
+              id={element.id}
             />
           </Col>
         })}
 
       </Row>
-    </>
+    </div>
   )
 }
-export default ProductList
+export default ProductList;

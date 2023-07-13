@@ -7,7 +7,7 @@ const News = () => {
   const pageSize = 6
   const country = "in"
   //apikey= process.env.REACT_APP_NEWS_API
-  const apikey="74061ece1a214520b228b91690ef4400"
+  const apikey="b9d2e5a3b7ae4c3f97da7aa735015c83"
     return (
       <>
         <Routes>

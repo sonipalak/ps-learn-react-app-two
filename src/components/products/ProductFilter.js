@@ -9,6 +9,7 @@ const ProductFilter = () => {
             .then(response => response.json())
             .then(data => setCategories(data))
             .catch(error => console.error(error));
+            
     }, []);
 
     return (

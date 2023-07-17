@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from "react";
+import React, {useState, useEffect} from "react";
 import ProductItem from './ProductItem';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 const ProductList = () => {
-  const [products, setProducts] = useState([])
+    const [products, setProducts] = useState([])
 
   const getProduct = async () => {
     let url = `https://dummyjson.com/products?limit=8`;
@@ -14,9 +14,9 @@ const ProductList = () => {
   useEffect(() => {
     getProduct();
   }, [])
-  return (
-    <div>
-      <Row>
+    return(
+        <div>
+            <Row>
         {products.map((element) => {
           return <Col className='mb-4' xs={12} md={6} key={element.id}>
             <ProductItem
@@ -33,7 +33,7 @@ const ProductList = () => {
         })}
 
       </Row>
-    </div>
-  )
+        </div>
+    )
 }
 export default ProductList;

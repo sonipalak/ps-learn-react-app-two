@@ -11,7 +11,7 @@ const ProductItem = (props) => {
                     <img src={thumbnail} alt="" />
                 </div>
                 <div>
-                    <h1>{title}</h1>
+                    <h1>{id}, {title}</h1>
                     <p>{description}</p>
                     <div>
                         <p>{price}</p>
@@ -19,7 +19,7 @@ const ProductItem = (props) => {
                     </div>
                     <p><strong>Brand:</strong> {brand}</p>
                     <p><strong>Category:</strong> {category}</p>
-                    <Link to={`/products/${id}`}>Details</Link>
+                    <Link to={`details/${id}`}>Details</Link>
                 </div>
             </div>
         </>

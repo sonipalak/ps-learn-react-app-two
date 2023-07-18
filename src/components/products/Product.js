@@ -2,6 +2,7 @@ import React from "react";
 import { Routes, Route } from "react-router-dom";
 import ProductLayout from './ProductLayout';
 import ProductList from './ProductList';
+import ProductDetails from './ProductDetails';
 
 const Product = () => {
     return (
@@ -29,6 +30,7 @@ const Product = () => {
                     <Route exact path="/automotive" element={<ProductList Key="automotive" category="automotive" />} />
                     <Route exact path="/motorcycle" element={<ProductList Key="motorcycle" category="motorcycle" />} />
                     <Route exact path="/lighting" element={<ProductList Key="lighting" category="lighting" />} />
+                    <Route exact path="/details/:id" element={<ProductDetails Key="ProductDetails" category="ProductDetails" />} />
                 </Route>
             </Routes>
         </div>

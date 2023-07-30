@@ -1,10 +1,12 @@
 import React from "react";
 import { Outlet } from 'react-router-dom'
-
+import Container from 'react-bootstrap/Container';
 
 const MovieLayout = () => {
-    return(
-        <><Outlet /></>
+    return (
+        <Container>
+            <Outlet />
+        </Container>
     )
 }
 export default MovieLayout;

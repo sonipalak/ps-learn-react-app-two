@@ -5,7 +5,7 @@ import NewLayout from './NewLayout'
 
 const News = () => {
   const pageSize = 6
-  const country = "in"
+  const country = "us"
   //apikey= process.env.REACT_APP_NEWS_API
   const apikey="b9d2e5a3b7ae4c3f97da7aa735015c83"
     return (
